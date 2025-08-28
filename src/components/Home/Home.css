@@ -1,0 +1,245 @@
+h2{
+    font-size: calc(16px + 1vmin);
+}
+
+p{
+    font-size: calc(10px + 1vmin);
+}
+
+.homeContainer{
+  background-color: #fff;
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+}
+
+.home-header{
+  font-size: calc(32px + 1vmin);
+}
+
+@media (width <= 991px) {
+  .home-header{
+    font-size: calc(24px + 1vmin);
+  }
+}
+
+.coreValuesSection{
+    position: relative;
+    margin-top: -80px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+}
+
+@media (width <= 991px) {
+    .coreValuesSection{
+        margin-top: -40px;
+        padding: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media (width < 768px) {
+    .coreValuesSection{
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 20px;
+        row-gap: 20px;
+    }
+}
+
+.coreValue{
+    text-align: centre;
+    min-width: 30%;
+    max-height: fit-content;
+}
+.coreValueImage{
+    width: 100%;
+}
+.coreValueTitle{
+    font-weight: 700px;
+    font-size: 36px;
+}
+
+@media (width < 991px){
+    .coreValueTitle{
+        font-size: calc(20px + 1vmin);
+    }
+}
+
+.home-purpose{
+    font-size: calc(16px + 1vmin);
+}
+
+.homeStrategyContainer{
+    font-family: Roboto, -apple-system, Helvetica, sans-serif;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.homeStrategyImage{
+    width : 50%;
+    position: relative;
+    z-index: 1;
+}
+.homeStrategyBackground{
+    width : 100%;
+    margin-top: 10%;
+    position: absolute;
+}
+.homeStartegyList{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding: 80px 20px;
+}
+
+@media (width < 991px){
+    .homeStartegyList{
+        flex-direction: column;
+        background-color: #002A46;
+        row-gap: 40px;
+        padding: 20px 0px;
+    }
+}
+
+.homeStrategy{
+    border-radius: 5%;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width < 991px){
+    .homeStrategy{
+        border-radius: 0px;
+    }
+}
+.homeStrategyMessage{
+    color: #000000;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.homeContactUsContainer{
+    background-color: #000000;
+    color: white;
+    width : 100%;
+    padding: 0 80px 0 40px;
+    border-radius: 0 0 15px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+    align-items: start;
+}
+
+@media (width < 991px){
+    .homeContactUsContainer{
+        padding: 0 40px 0 20px;
+        border-radius: 0px;
+    }
+}
+
+.homeContactButton{
+  color: #fff;
+  background-color: #0067ac;
+  border-radius: 15px;
+  justify-content: center;
+  align-self :last baseline;
+  align-items: stretch;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (width < 991px){
+    .homeContactButton{
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+.homeContactButton:hover{
+    color: black;
+    background-color: #85652B;
+}
+
+.homeContactUsMsg{
+    font-family: Roboto, -apple-system, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+}
+@media (width <= 991px) {
+  .homeContactUsMsg{
+    font-size: 16px;
+  }
+}
+
+.technologyContainer{
+    margin-top: 80px;
+}
+
+@media (768px < width < 991px){
+    .technologyContainer{
+        padding: 0px 20px;
+    }
+}
+
+.technologySection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 60px;
+    padding: 80px 0px;
+}
+
+@media (width < 991px){
+   .technologySection{
+        grid-template-columns: repeat(2, 1fr);
+   } 
+}
+
+@media (width < 768px){
+   .technologySection{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+   } 
+}
+
+.technology{
+    background: linear-gradient(0, #002A46, #0067AC);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    text-align: left;
+    display: inline;
+}
+
+@media (width < 768px){
+    .technology{
+        border-radius: 0px;
+    }
+
+}
+
+.technologyMsg{
+    font-size: calc(16px + 1vmin);
+}
+
+.tech-title{
+    font-size: calc(24px + 1vmin);
+}

@@ -1,0 +1,125 @@
+.industryContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
+@media (width < 991px){
+    .industryContainer{
+        display: inline;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+.industrySideBar{
+    background-color: #0067ac81;
+    min-width: 20%;
+    padding: 40px 0px 40px 80px;
+    align-items: first baseline;
+}
+
+@media (width < 991px){
+    .industrySideBar{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.industryTitle{
+    color: #0166AB;
+    font-family: Roboto, -apple-system, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.industryNav{
+    display:flex;
+    flex-direction: column;
+    color: black;
+    align-items: first baseline;
+}
+
+.industryNavItem{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 20px 0px;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+}
+
+@media (width <= 991px) {
+    .industryNavItem{
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+}
+
+.industryNavItem:hover{
+    color: #85652B;
+}
+
+.industryList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 40px;
+    padding: 80px;
+}
+
+@media (767px < width < 991px){
+    .industryList{
+        gap: 20px 20px;
+        padding: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 768px){
+    .industryList{
+        row-gap: 40px;
+        padding: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.industryListItem{
+    cursor: pointer;
+    text-align: left;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.industryListItem:hover{
+    .industryListItemTitle{
+        color:#85652B;
+        text-decoration: underline;
+    }
+}
+
+.industryListItemImg{
+    width:100%;
+}
+
+.industryListItemTitle{
+    margin: 0px;
+    font-size: 32px;
+}
+
+.industryListItemMsg{
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+@media (width <= 991px){
+    .industryListItemTitle{
+        font-size: 24px;
+    }
+}

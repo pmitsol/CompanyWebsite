@@ -1,0 +1,48 @@
+.industry-container{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    text-align: left;
+    row-gap: 40px;
+}
+
+@media (width <= 991px){
+    .industry-container{
+        padding: 0px;
+        line-height: 24px;
+    }
+    .industry-details{
+        padding: 20px;
+    }
+}
+
+.exp-list{
+    padding-inline-start: 20px;
+    list-style-type: disc;
+}
+
+.exp-item{
+    padding: 10px;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+}
+
+@media (width <= 991px){
+    .img-container{
+        gap:20px;
+    }
+}
+
+.img-item{
+    margin:auto;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.full-width {
+  grid-column: 1 / -1; /* Span from first to last column */
+}

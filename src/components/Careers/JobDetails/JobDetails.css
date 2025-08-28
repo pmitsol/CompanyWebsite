@@ -1,0 +1,53 @@
+.job-details-conatiner{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media (width < 991px){
+    .job-details-conatiner{
+        line-height: 24px;
+    }
+}
+
+.job-lables-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (width < 991px){
+    .job-lables-conatiner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+    }
+}
+
+.job-lable{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+    color: #85652B;
+}
+
+.lable-name{
+    margin: 0px;
+    font-size: medium;
+}
+
+.section-hide{
+    display: none;
+}
+
+.section-title{
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.job-desc-item, .edu-item, .exp-item{
+    color: #3f4042;
+    font-size: 16px;
+    font-weight: 400;
+}

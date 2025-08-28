@@ -1,0 +1,153 @@
+.scroll-disable{
+    overflow-y: hidden;
+}
+
+.job-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding: 40px 0px;
+}
+
+.job-card{
+    display: flex;
+    flex-direction: row;
+    border-style: ridge;
+    border-radius: 15px;
+    border-width: 1px;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+@media (width < 991px){
+    .job-card{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.job-contnet{
+    display: flex;
+    flex-direction: column;
+}
+
+.job-header{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.job-title{
+    font-weight: 500;
+    font-size:x-large;
+    margin: 0px;
+}
+
+.job-department{
+    font-size:small;
+    background-color: #eff8ff;
+    padding: 0px 10px;
+    border-radius: 15px;
+    color:#175cd3;
+    height: fit-content;
+}
+
+.job-subhead{
+    color: #475467;
+    font-size: medium;
+}
+
+.job-lables{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.job-lable{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+    color: #85652B;
+}
+
+@media (width < 991px){
+    .job-lable{
+        font-size: 16px;
+    }
+}
+
+.view-job{
+    background-color: #eff8ff;;
+    border: ridge;
+    border-width: 1px;
+    border-color: #85652B;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    height: fit-content;
+}
+
+.view-job:hover{
+    color: white;
+    background-color: #85652B;
+}
+
+.spawn-job-details{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-content: center;
+}
+
+.job-detail-popup{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 50%;
+    max-height: 80%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (width < 991px) {
+    .job-detail-popup{
+        column-gap: 10px;
+        width: 80%;
+    }
+}
+
+.job-detail-position{
+    background-color: rgba(256, 256, 256, 0.8);
+    border-radius: 20px;
+    overflow-y: scroll;
+    scrollbar-width:none;
+    padding:40px;
+}
+
+
+@media (width < 991px) {
+   .job-detail-position{
+        border-radius: 0px;
+        padding:20px;
+    }
+}
+
+.close-popup{
+    height: fit-content;
+    font-size: xx-large;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: rgba(256, 256, 256, 0.5);
+    cursor: pointer;
+}
+
+

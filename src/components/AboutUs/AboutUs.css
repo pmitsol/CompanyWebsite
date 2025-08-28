@@ -1,0 +1,419 @@
+.aboutUsPage {
+  background-color: #fff;
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+  overflow: hidden;
+}
+
+.aboutUs-header{
+  font-size: calc(32px + 1vmin);
+}
+
+@media (width <= 991px) {
+  .aboutUs-header{
+    font-size: calc(24px + 1vmin);
+  }
+}
+
+.mainContent {
+  flex-direction: column;
+  display: flex;
+  row-gap: 40px;
+  max-width: 100%;
+}
+
+@media (width <= 991px) {
+  .mainContent {
+      row-gap: 20px;
+  }
+}
+
+.pageTitle {
+  color: #000;
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (width <= 991px) {
+  .pageTitle {
+    margin-top: 40px;
+    font-size: calc(24px + 1vmin);
+  }
+}
+
+statsSection {
+  align-self: center;
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 52px;
+}
+
+@media (width <= 991px) {
+  .statsSection {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.statsContainer {
+  gap: 20px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .statsContainer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.statsCard {
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #0003;
+  border-radius: 15px;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  width: 33.33%;
+  padding: 30px 30px 50px;
+  font-family: Roboto, -apple-system, Helvetica, sans-serif;
+  font-weight: 700;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .statsCard {
+    margin-top: 19px;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+
+.statsIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  width: 197px;
+  max-width: 100%;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.statsNumber {
+  margin-top: 80px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .statsNumber {
+    margin-top: 40px;
+  }
+}
+
+.statsTitle {
+  margin-top: 16px;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.statsDescription {
+  color: #8e8c8c;
+  align-self: stretch;
+  margin-top: 36px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.companyInfoSection {
+   background-color: #a5d4f3;
+    border-radius: 15px;
+    max-width: 100%;
+    margin-top: 85px;
+}
+
+@media (width <= 991px) {
+  .companyInfoSection {
+    margin-top: 40px;
+    border-radius: 0px;
+  }
+}
+
+.companyInfoContainer {
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .companyInfoContainer {
+    flex-direction: column;
+  }
+}
+
+.companyTextContent {
+  color: #000;
+  flex-direction: column;
+  display: flex;
+  width: 60%;
+  padding: 40px 120px 80px 80px;
+  text-align: left;
+}
+
+@media (width <= 991px) {
+  .companyTextContent {
+    width: fit-content;
+    max-width: 100%;
+    padding: 20px 40px;
+  }
+}
+
+.sectionTitle {
+  color: #0067ac;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .sectionTitle {
+    margin-left: 10px;
+    font-size: calc(24px + 1vmin);
+  }
+}
+
+.companyTagline {
+  margin-top: 40px;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .companyTagline {
+    max-width: 100%;
+    font-size: calc(24px + 1vmin);
+  }
+}
+
+.companyDescription {
+  align-self: stretch;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (width <= 991px) {
+  .companyDescription {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}
+
+.brandHighlight {
+  color: #0067ac;
+}
+
+.companyImageContainer {
+  flex-direction: column;
+  align-items: stretch;
+  width: 40%;
+  line-height: normal;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .companyImageContainer {
+    width: 100%;
+  }
+}
+
+.companyImageWrapper {
+  z-index: 10;
+  background-color: #0067acbf;
+  border-radius: 15px;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: start;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .companyImageWrapper {
+    display: none;
+  }
+}
+
+.companyImage {
+  aspect-ratio: 1.4;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  width: 100%;
+  margin-left: -120px;
+}
+
+.strategyWrapper {
+  width: 100%;
+}
+
+@media (width <= 991px) {
+  .strategyWrapper {
+    max-width: 100%;
+  }
+}
+
+.strategySection {
+    margin: 80px 0px;
+}
+
+@media (width <= 991px) {
+  .strategySection {
+    margin: 20px 0px;
+  }
+}
+
+.strategyContainer {
+  gap: 20px;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .strategyContainer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0px 20px;
+    gap: 0;
+  }
+}
+
+.strategyImageColumn {
+  flex-direction: column;
+  align-items: stretch;
+  width: 50%;
+  margin-left: 0;
+  line-height: normal;
+  display: flex;
+}
+
+@media (width <= 991px) {
+  .strategyImageColumn {
+    width: 80%;
+    align-self: center;
+  }
+}
+
+.strategyImage {
+  aspect-ratio: 1.5;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 15px;
+  flex-grow: 1;
+  width: 100%;
+  box-shadow: 4px 4px 4px #00000040;
+}
+
+@media (width <= 991px) {
+  .strategyImage {
+    max-width: 100%;
+  }
+}
+
+.strategyTextColumn {
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20px;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+@media (width <= 991px) {
+  .strategyTextColumn {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+.strategyContent {
+  color: #000;
+  flex-direction: column;
+  align-self: stretch;
+  align-items: stretch;
+  margin: auto 0;
+  display: flex;
+}
+
+.strategyTitle {
+  align-self: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.strategyText {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (width <= 991px) {
+  .strategyText {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}
+
+.contactWrapper{
+    margin: 30px 0px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+@media (width < 991px){
+  .contactWrapper{
+    border-radius: 0px;
+  }
+}
+
+.contactEmail{
+    text-align: right;
+    font-family: Roboto, -apple-system, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.contactContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: inherit;
+    padding-right: 80px;
+}
+
+.contactMessage{
+    width: 70%;
+    font-family: inherit;
+    font-size: 32px;
+    text-align: left;
+}
+
+@media (width <= 991px){
+    .contactEmail{
+        font-size: 16px;
+    }
+    .contactMessage{
+        font-size: 24px;
+    }
+}

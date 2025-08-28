@@ -1,0 +1,54 @@
+.heroSection {
+  color: #fff;
+  text-align: inherit;
+  border-radius: 10px;
+  flex-direction: column;
+  max-height: 100%;
+  width: inherit;
+  padding: 150px 50px;
+  display: flex;
+  position: relative;
+}
+
+.heroBackground {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  border-radius: 15px;
+  max-width: inherit;
+}
+
+.heroTitle {
+  margin: 0;
+  font-weight: 700p;
+  font-size: 40px;
+}
+
+@media (width <= 991px) {
+
+  .heroSection {
+    max-width: 100%;
+    padding: 100px 20px;
+  }
+
+  .heroContent {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .heroBackground{
+    border-radius: 0px;
+  }
+
+  .heroTitle{
+    font-size: calc(20px + 1vmin);
+  }
+}
+
+.heroContent {
+  position: relative;
+}
+

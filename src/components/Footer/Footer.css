@@ -1,0 +1,60 @@
+.footerContainer{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 40px 40px 80px 0px;
+}
+
+@media (width < 991px){
+    .footerContainer{
+        border-radius: 0px;
+        padding: 40px 0px;
+    }
+}
+
+.footerTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerNavigations{
+    color: white;
+    padding: 40px 80px;
+}
+
+@media (width < 991px){
+    .footerNavigations{
+        padding: 20px;
+    }
+}
+
+.footerNavList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footerNavElement{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, -apple-system, Helvetica, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footerNavElement:hover{
+    color: #85652B;
+    text-decoration: underline;
+}
+
+.copyRights{
+    font-family: Roboto, -apple-system, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.highliter{
+    color: #0067ac;
+    text-decoration: underline;
+}

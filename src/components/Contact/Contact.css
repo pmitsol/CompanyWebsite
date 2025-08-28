@@ -1,0 +1,112 @@
+.contact-container{
+    background-color: #0067ac;
+    align-self: center;
+    width:100%;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: left;
+    color: #cbb58d;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+
+@media (width < 991px){
+    .contact-container{
+        margin-top: 80px;
+        border-radius: 0px;
+        padding: 20px 40px;
+        font-size: 16px;
+    }
+}
+
+.contact-head{
+    margin: 0px;
+    font-weight: 300;
+}
+
+.contact-required::after{
+    content: "* ";
+    color: rgba(215, 8, 8, 0.808);
+}
+
+.contact-form{
+    background-color: white;
+    margin: 40px;
+    padding: 40px 80px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width < 991px){
+    .contact-form{
+        padding: 20px 40px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 40px;
+    padding-inline-start: 0px;
+    align-items: center;
+}
+
+.contact-field{
+    list-style: none;
+    lable{
+        display: block;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .contact-field-input{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border-style: ridge;
+        border-width: 1px;
+        font-size: medium;
+        outline: none;
+        
+    }
+    input:focus{
+        border-color: #85652B;
+    }
+}
+
+.contact-field:last-child{
+    grid-column: 1/-1;
+    .contact-field-input{
+        font-size: inherit;
+        min-height: 150px;
+        padding: 20px;
+    }
+}
+
+.contact-send-message{
+    width:fit-content;
+    padding: 20px;
+    font-size: medium;
+    border-radius: 40px;
+    border-style: none;
+    background-color: #0067ac;
+    color: white;
+    cursor: pointer;
+}
+
+@media (width < 991px){
+    .contact-send-message{
+        border-radius: 10px;
+    }
+}
+
+.contact-send-message:hover{
+    background-color: #85652B;
+    color: black;
+}
