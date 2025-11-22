@@ -21,12 +21,6 @@
     }
 }
 
-@media (width < 768px) {
-     .contact-container{
-        padding: 20px;
-     }
-}
-
 .contact-head{
     margin: 0px;
     font-weight: 300;
@@ -48,18 +42,10 @@
 
 @media (width < 991px){
     .contact-form{
-        margin: 20px;
         padding: 20px 40px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-    }
-}
-
-@media (width < 768px) {
-     .contact-form{
-        margin: 10px;
-        padding: 20px;
     }
 }
 
@@ -69,13 +55,6 @@
     gap: 40px 40px;
     padding-inline-start: 0px;
     align-items: center;
-}
-
-@media (width < 768px) {
-    .contact-details{
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 40px;
-    }
 }
 
 .contact-field{

@@ -242,12 +242,12 @@ function ContactSection(){
   return (
     <div className = "contactWrapper">
       <div className = "contactEmail">
-        Email :- hr@pmitsol.com
+        E-mail :- hr@pmitsol.com
       </div>
       <div className = "contactContent">
         <div className = "contactMessage">
           <p>
-            Ready to embark on a journey of growth and success?
+            Ready to embark on a jpurney of growth and success?
             <br/>Reach out to us today, and let's create a brighter future together.
           </p>
         </div>
