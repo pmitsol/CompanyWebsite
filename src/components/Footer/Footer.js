@@ -12,7 +12,7 @@ const Footer = ({navPages, setActivePage}) => {
         className= "logo">
       </img>
        <div className = "contactEmail">
-        E-mail :- hr@pmitsol.com
+        Email :- hr@pmitsol.com
       </div>
     </div>
     <nav className = 'footerNavigations'>
@@ -26,7 +26,7 @@ const Footer = ({navPages, setActivePage}) => {
       </ul>
     </nav>
     <div className='copyRights'>
-      Copyright @ <span className='highliter'>PM-T SOLUTIONS's</span>
+      Copyright @<span className='highliter'>PM-IT SOLUTIONS's</span>
       {' '} 2025 | All Rights Reserves
     </div>
   </div>
