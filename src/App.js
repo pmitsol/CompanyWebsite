@@ -6,11 +6,11 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Careers from './components/Careers/Careers';
 import Industry from './components/Industry/Industry';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
 import Healthcare from './components/Industry/Healthcare/Healthcare';
 import Retail from './components/Industry/Retail/Retail';
 import './App.css';
 import { useState } from 'react';
+import FooterSimple from './components/Footer_Simple/Footer_Simple';
 
 function App() {
 
@@ -64,7 +64,7 @@ function App() {
           <Route path = "/contact" Component={Contact}/>
         </Routes>
       </div>
-      <Footer navPages={navPages} setActivePage={setCurrPage}/>
+      <FooterSimple/>
     </div>
   );
 }
